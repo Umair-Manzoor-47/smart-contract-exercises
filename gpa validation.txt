@@ -1,0 +1,11 @@
+boolean flag = true;
+    int CGpa = (int)cgpa;
+    if( CGpa >= 0 && CGpa <= 4)
+    {
+      flag = true;
+    }
+    else
+    {
+      flag = false;
+    }
+    return flag;

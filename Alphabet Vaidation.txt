@@ -1,0 +1,12 @@
+boolean flag = true;
+    
+    for (int i = 0; i < name.length() ; i++)
+    {
+      if (!((name.charAt(i) >= 'a' && name.charAt(i) <= 'z') || (name.charAt(i) >= 'A' && name.charAt(i) <= 'Z')  || (name.charAt(i) == ' ')))
+      { 
+        flag = false;
+      }
+      
+    }
+    
+    return flag;
