@@ -1,0 +1,100 @@
+import java.time.LocalDate;  
+import java.time.Period;
+
+
+boolean flag = true;
+    String dob = getDOB();
+  String arr1[] = doob.split(" ");
+  String arr2[] = arr1[1].split(",");
+  int YYYY = Integer.parseInt(arr2[1]);
+  int DD = Integer.parseInt(arr2[0]);
+  int MM = -1;
+  if( arr1[0].equals("January") || arr1[0].equals("january") )
+  {
+    MM = 1;
+  }
+  else if( arr1[0].equals("February") || arr1[0].equals("february") )
+  {
+    MM = 2;
+  }
+  else if( arr1[0].equals("March") || arr1[0].equals("march") )
+  {
+    MM = 3;
+  }
+  else if( arr1[0].equals("April") || arr1[0].equals("april") )
+  {
+    MM = 4;
+  }
+  else if( arr1[0].equals("May") || arr1[0].equals("may") )
+  {
+    MM = 5;
+  }
+  else if( arr1[0].equals("June") || arr1[0].equals("june") )
+  {
+    MM = 6;
+  }
+  else if( arr1[0].equals("July") || arr1[0].equals("july") )
+  {
+    MM = 7;
+  }
+  else if( arr1[0].equals("August") || arr1[0].equals("august") )
+  {
+    MM = 8;
+  }
+  else if( arr1[0].equals("September") || arr1[0].equals("september") )
+  {
+    MM = 9;
+  }
+  else if( arr1[0].equals("October") || arr1[0].equals("October") )
+  {
+    MM = 10;
+  }
+  else if( arr1[0].equals("November") || arr1[0].equals("november") )
+  {
+    MM = 11;
+  }
+  else if( arr1[0].equals("December") || arr1[0].equals("december") )
+  {
+    MM = 12;
+  }
+  
+  if( YYYY > 1990 && YYYY < 2005 )
+  {
+    if( MM == 1 || MM == 3 || MM == 5 || MM == 7 || MM == 8 || MM == 10 || MM == 12 )
+  {
+    if( DD >=1 && DD <= 31 )
+    {
+      flag = true;
+    }
+    else
+    {
+      flag = false;
+    }
+  }
+  else if ( MM == 4 || MM == 6 || MM == 9 || MM == 11 )
+  {
+    if( DD >=1 && DD <= 30)
+    {
+      flag = true;
+    }
+    else
+    {
+      flag = false;
+    }
+  }
+  else if( MM == 2)
+  {
+    if( DD >= 1 && DD <= 28)
+    {
+      flag = true;
+    }
+    else
+    {
+      flag = false;
+    }
+  }
+  }
+   else
+  {
+    flag = false;
+  }
