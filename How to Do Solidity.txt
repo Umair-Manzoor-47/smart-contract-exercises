@@ -1,0 +1,30 @@
+#Problem: Xsquare loves to play with strings a lot. Today, he has two strings S1 and S2 both consisting of lower case alphabets. Xsquare listed all subsequences of string S1 on a paper and all subsequences of string S2 on a separate paper. Xsquare wants to know whether there exists a string which is listed on both the papers.
+#Xsquare thinks that this task is pretty boring and handed it to you. Please accomplish this task on his behalf.
+
+def finding_subsquence(s1,s2):
+    flag=True
+    if len(s1)>len(s2):
+        for i in range(len(s1)):
+            if s1[i] in s2:
+                flag=False
+                return "Yes"
+    else:
+            for i in range(len(s1)):
+                if s2[i] in s1:
+                    flag=False
+                    return "Yes"
+
+                    #costing big-o(n^2)
+    # for i in range(len(s1)):
+    #     for j in range(len(s2)):
+    #         if s1[i]==s2[j]:
+    #             flag=False
+    #             return "Yes"
+    if flag==True:
+        return "No"
+test_cases=input("Enter Test Cases:")
+
+for i in range(int(test_cases)):
+    str1=input("Enter First String:")
+    str2=input("Enter Second String")
+    print(finding_subsquence(str1,str2))
