@@ -1,0 +1,49 @@
+<html>
+<title>
+    LOGIN APPLICATION
+</title>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+
+<body class="main">
+    <div style="   background-color: rgba(41, 24, 194, 0.74); border-radius: 40px;">
+        <H1 class="signup">
+            SIGN UP</H1>
+    </div>
+    <form action="/signupdata" method="POST">
+        <div class="mainsignup">
+
+
+            <div style="padding-left:50px; width:500PX;">
+                <h3 class="heading"><b>EMAIL</b></h3>
+                <input class="inputdata" type="email" placeholder="ENTER  EMAIL" name="email" required="required">
+            </div>
+
+            <div style="padding-left:50px; width:500PX;">
+                <h3 class="heading"><b>USERNAME</b></h3>
+                <input class="inputdata" type="username" placeholder="ENTER  USER" name="username" required="required">
+            </div>
+
+            <div style="padding-left:50px; width:500PX;">
+                <h3 class="heading"><b>PASSWORD</b></h3>
+                <input class="inputdata" type="password" placeholder="ENTER PASSWORD" name="password"
+                    required="required">
+            </div>
+
+            </br></br></br>
+
+            <button class="signup_button" style="margin-left: 500PX;">
+                <div style="color: rgba(255, 255, 255, 0.801);">
+
+                    <b>SIGN UP</b>
+
+                </div>
+            </button>
+
+        </div>
+    </form>
+</body>
+
+</html>

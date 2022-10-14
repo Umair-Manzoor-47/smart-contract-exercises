@@ -1,0 +1,60 @@
+<html>
+<title>
+    LOGIN APPLICATION
+</title>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="login">
+            <H1 class="login_text">
+                LOGIN</H1>
+        </div>
+
+        <div class="main_box">
+            <img src="static\uet.png" style=" width: 200px; height: 100px; padding-left: 50px;" </br>
+            </br>
+
+            <form action="/signindata" method="POST">
+                <h3 class="email_password"><b>EMAIL</b></h3>
+
+                <input class="input_box" type="EMAIL" placeholder=" ENTER YOUR EMAIL" name="email">
+
+
+                <h3 class="email_password"><b>PASSWORD</b></h3>
+
+                <input class="input_box" type="password" placeholder=" ENTER YOUR PASSWORD" name="password">
+
+                <div style=" padding-left:50px;">
+                    <button class="login_button">
+                        <div style="color: rgba(255, 255, 255, 0.74);">
+                            <b>LOGIN</b>
+                        </div>
+                    </button>
+                </div>
+            </form>
+
+
+
+            <h3 style="color:rgba(241, 241, 241, 0.897); text-align: center;">OR</h3>
+
+            <div style="padding-left:30px;">
+
+                <button class="signup_button">
+                    <div style="color: rgba(255, 255, 255, 0.801);">
+                        <a href="SIGNUP.html" style="text-decoration: none;">
+                            <b style="color: rgba(241, 241, 241, 0.897);;">SIGN UP</b>
+                        </a>
+                    </div>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
